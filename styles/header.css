@@ -1,5 +1,13 @@
 header{
-    width: 100%;
-    min-height: 64px;
+    padding: 16px;
+    width: calc(100% - 32px);
+    min-height: 32px;
     background-color: rgba(16,16,32);
+    display: flex;
+    justify-content: center;
+}
+header h1 {
+    color: red;
+    height: 32px;
+    font-size: 30px;
 }
