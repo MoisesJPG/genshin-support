@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Genshin Impact - Support</title>
     <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <script src="sql.js"></script>
+    <script src="app.js"></script>
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/main.css">
@@ -16,12 +18,10 @@
         <h1>Genshin Support</h1>
     </header>
     <main>
-        <h1>IndexedDB Example</h1>
-        
-        <button onclick="addData()">Agregar Datos</button>
-        <button onclick="readData()">Leer Datos</button>
-    
-        <script src="app.js"></script>
+
+        <h1>SQLite en el Navegador</h1>
+        <button onclick="queryDatabase()">Consultar Base de Datos</button>
+
         <section id="artifacts">
             <h1 class="title">Artifacts</h1>
             <h1 class="button" id="hiddenArtifactsContainer" onclick="artifactsContainer(false)">-</h1>
@@ -34,14 +34,6 @@
                 }
             </script>
             <div id="artifactsContainer" class="container">
-                <div class="weapon"><div class="icon"><img src="images/artifacts/Traveler Icon.webp"></div><p>Traveler</p></div>
-                <div class="weapon"><div class="icon"><img src="images/artifacts/Traveler Icon.webp"></div><p>Traveler</p></div>
-                <div class="weapon"><div class="icon"><img src="images/artifacts/Traveler Icon.webp"></div><p>Traveler</p></div>
-                <div class="weapon"><div class="icon"><img src="images/artifacts/Traveler Icon.webp"></div><p>Traveler</p></div>
-                <div class="weapon"><div class="icon"><img src="images/artifacts/Traveler Icon.webp"></div><p>Traveler</p></div>
-                <div class="weapon"><div class="icon"><img src="images/artifacts/Traveler Icon.webp"></div><p>Traveler</p></div>
-                <div class="weapon"><div class="icon"><img src="images/artifacts/Traveler Icon.webp"></div><p>Traveler</p></div>
-                <div class="weapon"><div class="icon"><img src="images/artifacts/Traveler Icon.webp"></div><p>Traveler</p></div>
             </div>
         </section>
         <section id="characters">
@@ -151,14 +143,6 @@
                 }
             </script>
             <div id="materialsContainer" class="container">
-                <div class="material"><div class="icon"><img src="images/materials/Traveler Icon.webp"></div><p>Traveler</p></div>
-                <div class="material"><div class="icon"><img src="images/materials/Traveler Icon.webp"></div><p>Traveler</p></div>
-                <div class="material"><div class="icon"><img src="images/materials/Traveler Icon.webp"></div><p>Traveler</p></div>
-                <div class="material"><div class="icon"><img src="images/materials/Traveler Icon.webp"></div><p>Traveler</p></div>
-                <div class="material"><div class="icon"><img src="images/materials/Traveler Icon.webp"></div><p>Traveler</p></div>
-                <div class="material"><div class="icon"><img src="images/materials/Traveler Icon.webp"></div><p>Traveler</p></div>
-                <div class="material"><div class="icon"><img src="images/materials/Traveler Icon.webp"></div><p>Traveler</p></div>
-                <div class="material"><div class="icon"><img src="images/materials/Traveler Icon.webp"></div><p>Traveler</p></div>
             </div>
         </section>
         <section id="weapons">
@@ -173,14 +157,6 @@
                 }
             </script>
             <div id="weaponsContainer" class="container">
-                <div class="weapon"><div class="icon"><img src="images/weapons/Traveler Icon.webp"></div><p>Traveler</p></div>
-                <div class="weapon"><div class="icon"><img src="images/weapons/Traveler Icon.webp"></div><p>Traveler</p></div>
-                <div class="weapon"><div class="icon"><img src="images/weapons/Traveler Icon.webp"></div><p>Traveler</p></div>
-                <div class="weapon"><div class="icon"><img src="images/weapons/Traveler Icon.webp"></div><p>Traveler</p></div>
-                <div class="weapon"><div class="icon"><img src="images/weapons/Traveler Icon.webp"></div><p>Traveler</p></div>
-                <div class="weapon"><div class="icon"><img src="images/weapons/Traveler Icon.webp"></div><p>Traveler</p></div>
-                <div class="weapon"><div class="icon"><img src="images/weapons/Traveler Icon.webp"></div><p>Traveler</p></div>
-                <div class="weapon"><div class="icon"><img src="images/weapons/Traveler Icon.webp"></div><p>Traveler</p></div>
             </div>
         </section>
     </main>
