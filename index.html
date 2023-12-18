@@ -13,12 +13,21 @@
 </head>
 <body>
     <header>
-        <h1>GENSHIN SUPPORT</h1>
+        <h1>Genshin Support</h1>
     </header>
     <main>
         <section id="characters">
             <h1 class="title">Characters</h1>
-            <div class="container">
+            <h1 class="button" id="hiddenCharactersContainer" onclick="charactersContainer(false)">-</h1>
+            <h1 class="button" id="showCharactersContainer" onclick="charactersContainer(true)" style="display: none;">+</h1>
+            <script>
+                function charactersContainer(show){
+                    document.getElementById('charactersContainer').style.display = show ? "": "none";
+                    document.getElementById('showCharactersContainer').style.display = show ? "none": "";
+                    document.getElementById('hiddenCharactersContainer').style.display = show ? "": "none";
+                }
+            </script>
+            <div id="charactersContainer" class="container">
                 <div class="character"><div class="icon"><img src="images/characters/Traveler Icon.webp"></div><p>Traveler</p></div>
                 <div class="character"><div class="icon"><img src="images/characters/Traveler Icon.webp"></div><p>Traveler</p></div>
                 <div class="character"><div class="icon"><img src="images/characters/Traveler Icon.webp"></div><p>Traveler</p></div>
@@ -100,6 +109,72 @@
                 <div class="character"><div class="icon"><img src="images/characters/Wriothesley Icon.webp"></div><p>Wriothesley</p></div>
                 <div class="character"><div class="icon"><img src="images/characters/Charlotte Icon.webp"></div><p>Charlotte</p></div>
                 <div class="character"><div class="icon"><img src="images/characters/Furina Icon.webp"></div><p>Furina</p></div>
+            </div>
+        </section>
+        <section id="weapons">
+            <h1 class="title">Weapons</h1>
+            <h1 class="button" id="hiddenWeaponsContainer" onclick="weaponsContainer(false)">-</h1>
+            <h1 class="button" id="showWeaponsContainer" onclick="weaponsContainer(true)" style="display: none;">+</h1>
+            <script>
+                function weaponsContainer(show){
+                    document.getElementById('weaponsContainer').style.display = show ? "": "none";
+                    document.getElementById('showWeaponsContainer').style.display = show ? "none": "";
+                    document.getElementById('hiddenWeaponsContainer').style.display = show ? "": "none";
+                }
+            </script>
+            <div id="weaponsContainer" class="container">
+                <div class="weapon"><div class="icon"><img src="images/weapons/Traveler Icon.webp"></div><p>Traveler</p></div>
+                <div class="weapon"><div class="icon"><img src="images/weapons/Traveler Icon.webp"></div><p>Traveler</p></div>
+                <div class="weapon"><div class="icon"><img src="images/weapons/Traveler Icon.webp"></div><p>Traveler</p></div>
+                <div class="weapon"><div class="icon"><img src="images/weapons/Traveler Icon.webp"></div><p>Traveler</p></div>
+                <div class="weapon"><div class="icon"><img src="images/weapons/Traveler Icon.webp"></div><p>Traveler</p></div>
+                <div class="weapon"><div class="icon"><img src="images/weapons/Traveler Icon.webp"></div><p>Traveler</p></div>
+                <div class="weapon"><div class="icon"><img src="images/weapons/Traveler Icon.webp"></div><p>Traveler</p></div>
+                <div class="weapon"><div class="icon"><img src="images/weapons/Traveler Icon.webp"></div><p>Traveler</p></div>
+            </div>
+        </section>
+        <section id="artifacts">
+            <h1 class="title">Artifacts</h1>
+            <h1 class="button" id="hiddenArtifactsContainer" onclick="artifactsContainer(false)">-</h1>
+            <h1 class="button" id="showArtifactsContainer" onclick="artifactsContainer(true)" style="display: none;">+</h1>
+            <script>
+                function artifactsContainer(show){
+                    document.getElementById('artifactsContainer').style.display = show ? "": "none";
+                    document.getElementById('showArtifactsContainer').style.display = show ? "none": "";
+                    document.getElementById('hiddenArtifactsContainer').style.display = show ? "": "none";
+                }
+            </script>
+            <div id="artifactsContainer" class="container">
+                <div class="weapon"><div class="icon"><img src="images/artifacts/Traveler Icon.webp"></div><p>Traveler</p></div>
+                <div class="weapon"><div class="icon"><img src="images/artifacts/Traveler Icon.webp"></div><p>Traveler</p></div>
+                <div class="weapon"><div class="icon"><img src="images/artifacts/Traveler Icon.webp"></div><p>Traveler</p></div>
+                <div class="weapon"><div class="icon"><img src="images/artifacts/Traveler Icon.webp"></div><p>Traveler</p></div>
+                <div class="weapon"><div class="icon"><img src="images/artifacts/Traveler Icon.webp"></div><p>Traveler</p></div>
+                <div class="weapon"><div class="icon"><img src="images/artifacts/Traveler Icon.webp"></div><p>Traveler</p></div>
+                <div class="weapon"><div class="icon"><img src="images/artifacts/Traveler Icon.webp"></div><p>Traveler</p></div>
+                <div class="weapon"><div class="icon"><img src="images/artifacts/Traveler Icon.webp"></div><p>Traveler</p></div>
+            </div>
+        </section>
+        <section id="materials">
+            <h1 class="title">Materials</h1>
+            <h1 class="button" id="hiddenMaterialsContainer" onclick="materialsContainer(false)">-</h1>
+            <h1 class="button" id="showMaterialsContainer" onclick="materialsContainer(true)" style="display: none;">+</h1>
+            <script>
+                function materialsContainer(show){
+                    document.getElementById('materialsContainer').style.display = show ? "": "none";
+                    document.getElementById('showMaterialsContainer').style.display = show ? "none": "";
+                    document.getElementById('hiddenMaterialsContainer').style.display = show ? "": "none";
+                }
+            </script>
+            <div id="materialsContainer" class="container">
+                <div class="material"><div class="icon"><img src="images/materials/Traveler Icon.webp"></div><p>Traveler</p></div>
+                <div class="material"><div class="icon"><img src="images/materials/Traveler Icon.webp"></div><p>Traveler</p></div>
+                <div class="material"><div class="icon"><img src="images/materials/Traveler Icon.webp"></div><p>Traveler</p></div>
+                <div class="material"><div class="icon"><img src="images/materials/Traveler Icon.webp"></div><p>Traveler</p></div>
+                <div class="material"><div class="icon"><img src="images/materials/Traveler Icon.webp"></div><p>Traveler</p></div>
+                <div class="material"><div class="icon"><img src="images/materials/Traveler Icon.webp"></div><p>Traveler</p></div>
+                <div class="material"><div class="icon"><img src="images/materials/Traveler Icon.webp"></div><p>Traveler</p></div>
+                <div class="material"><div class="icon"><img src="images/materials/Traveler Icon.webp"></div><p>Traveler</p></div>
             </div>
         </section>
     </main>
