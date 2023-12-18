@@ -21,7 +21,7 @@ function queryDatabase() {
     }
 
     // Ejemplo de consulta SQL
-    const query = 'SELECT * FROM tuTabla';
+    const query = 'SELECT * FROM characters';
     const result = db.exec(query);
 
     console.log('Resultado de la consulta:', result);
