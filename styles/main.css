@@ -22,6 +22,7 @@ section .title {
     height: 32px;
     width: calc(100% - 32px - 16px - 16px);
 }
+
 section .button {
     float: left;
     margin: 8px;
