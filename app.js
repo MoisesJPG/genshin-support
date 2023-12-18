@@ -1,5 +1,7 @@
+const SQL = initSqlJs();
+const db = new SQL.Database();
 document.addEventListener('DOMContentLoaded', initDatabase);
-let db;
+
 function initDatabase() {
     const xhr = new XMLHttpRequest();
     xhr.open('GET', 'database.db', true);
