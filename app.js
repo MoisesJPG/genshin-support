@@ -1,5 +1,6 @@
-const SQL = initSqlJs();
-const db = new SQL.Database();
+let SQL;  // Declarar SQL como una variable global
+let db;   // Cambiar de const a let para permitir reasignación
+
 document.addEventListener('DOMContentLoaded', initDatabase);
 
 function initDatabase() {
@@ -9,7 +10,7 @@ function initDatabase() {
 
     xhr.onload = function (e) {
         const uInt8Array = new Uint8Array(this.response);
-        const SQL = initSqlJs({ locateFile: () => 'sql.js' });
+        SQL = initSqlJs({ locateFile: () => 'sql.js' });
         db = new SQL.Database(uInt8Array);
         console.log('Base de datos abierta con éxito');
     };
