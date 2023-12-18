@@ -1,5 +1,5 @@
+document.addEventListener('DOMContentLoaded', initDatabase);
 let db;
-
 function initDatabase() {
     const xhr = new XMLHttpRequest();
     xhr.open('GET', 'database.db', true);
