@@ -4,12 +4,12 @@ document.addEventListener('DOMContentLoaded', initDatabase);
 
 function initDatabase() {
     const xhr = new XMLHttpRequest();
-    xhr.open('GET', 'database.db', true);
+    xhr.open('GET', 'sql.js', true);
     xhr.responseType = 'arraybuffer';
 
     xhr.onload = function (e) {
         const uInt8Array = new Uint8Array(this.response);
-        const SQL = initSqlJs({ locateFile: () => 'database.db' });
+        const SQL = initSqlJs({ locateFile: () => 'sql.js' });
         db = new SQL.Database(uInt8Array);
         console.log('Base de datos abierta con éxito');
     };
