@@ -30,24 +30,32 @@ section .container .character{
     width: 96px;
     height: 120px;
     border-radius: 8px;
-    box-shadow: 0px 0px 4px 1px rgba(16, 16, 32);
+    box-shadow: 0px 0px 4px 1px rgba(16, 16, 32, 0.75);
     overflow: hidden;
-
 }
-section .container .character img {
+
+section .container .character .icon {
     width: 96px;
     height: 96px;
-    border-radius: 8px;
+    border-radius: 8px 8px 0px 0px;
+    overflow: hidden;
 }
-section .container .character img:hover {
+
+section .container .character .icon img {
+    width: 96px;
+    height: 96px;
+}
+
+section .container .character .icon img:hover {
     width: 128px;
     height: 128px;
     margin-left: -16px;
+    margin-top: -16px;
 }
 
 section .container .character p {
     width: calc(100% - 8px);
     height: 16px;
     padding: 4px;
-    margin-top: -4px;
+    text-align: center;
 }
